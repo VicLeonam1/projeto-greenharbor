@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-
+/*Versão para celular*/
 
 
 *{
@@ -11,7 +11,7 @@
 }
 
 body{
-    background: url(../images/bglogin.png) no-repeat fixed center center / cover;
+    background: url(../telalogin/bglogin.png) no-repeat fixed center center / cover;
 }
 
 main{
