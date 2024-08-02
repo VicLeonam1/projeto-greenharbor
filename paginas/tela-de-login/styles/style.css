@@ -9,19 +9,55 @@
     padding: 0px;
     margin: 0px;
 }
+
+body{
+    background: url(../images/bglogin.png) no-repeat fixed center center / cover;
+}
+
 main{
+    background-color: white;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 9px 5px 15px black;
     width: 300px;
     margin: auto;
+    margin-top: 40%;
 }
 section{
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding: 20px;
 }
 
 #Login{
     text-align: center;
+}
+
+.formlogin{
+    padding: 10px;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+}
+
+form a{
+    display: block;
+    padding: 10px;
+}
+
+#com{
+    padding-top: 10px;
+}
+
+img{
+    padding-top: 10px;
+    width: 40px;
+}
+
+#entrar{
+    width: 210px;
 }
