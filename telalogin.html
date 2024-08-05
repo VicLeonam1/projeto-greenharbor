@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" media="all">
-    <link rel="stylesheet" href="css/mediaqueries.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/logincll.css" media="all" />
+    <link rel="stylesheet" href="css/loginall.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kaushan+Script&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kaushan+Script&display=swap");
     </style>
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section>
-            <!--Tela de login-->
-            <div id="Login">
-                <h1>Login</h1>
-                <p>Faça seu Login</p>
-                <form action="login.js" method="post" class="formlogin">
-                    <input type="email" placeholder="insira seu E-mail"> <br>
-                    <input type="password" placeholder="insira sua senha"> <br>
-                    <input type="submit" value="Entrar" id="entrar"> <br>
-                    <a href="">esqueci minha senha</a>
-                    <p id="com">ou entrar com:</p>
-                    <img src="telalogin/google-icon.png" alt="tela de login">
-                </form>
-            </div>
-        </section>
+      <img src="telalogin/logo.png" alt="logo" id="logo">
+      <section>
+        <!--Tela de login-->
+        <div id="Login">
+          <h1>Login</h1>
+          <p>Faça seu Login</p>
+          <form action="login.js" method="post" class="formlogin">
+            <input type="email" placeholder="insira seu E-mail" /> <br />
+            <input type="password" placeholder="insira sua senha" /> <br />
+            <input type="submit" value="Entrar" id="entrar" /> <br />
+            <p class="p">Não tem conta? <a href="#">Cadastrar-se</a></p>
+            <p class="p"><a href="#">Esqueci minha senha</a></p>
+            <p class="p">ou entrar com:</p>
+            <img src="telalogin/google-icon.png" alt="tela de login" id="google">
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

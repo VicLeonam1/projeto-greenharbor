@@ -1,1 +1,24 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        width: 500px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 80vw;
+        transition: 0.5s;
+    }
+    section{
+
+    }
+
+    #logo{
+        display: block;
+        width: 350px;
+    }
+}

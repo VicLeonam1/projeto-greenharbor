@@ -20,9 +20,10 @@ main{
     flex-direction: row;
     border-radius: 20px;
     box-shadow: 9px 5px 15px black;
-    width: 300px;
+    width: 80vw;
     margin: auto;
     margin-top: 40%;
+    transition: 0.5s;
 }
 section{
     display: flex;
@@ -42,22 +43,32 @@ section{
 input{
     padding: 10px;
     margin: 5px;
+    border-radius: 20px;
 }
 
 form a{
     display: block;
     padding: 10px;
+    text-decoration: none;
+    color: green;
 }
 
 #com{
     padding-top: 10px;
 }
 
-img{
+#google{
     padding-top: 10px;
     width: 40px;
 }
 
+#logo{
+    display: none;
+}
+
 #entrar{
     width: 210px;
+    color: white;
+    border: none;
+    background-color: green;
 }
