@@ -19,8 +19,8 @@ main{
     width: 70vw;
     padding: 30px;
     margin: auto;
-    margin-top: 15%;
-    transition: 0.2s;
+    margin-top: 10%;
+    transition: 1s;
 }
 
 section{
@@ -30,7 +30,7 @@ section{
     flex-flow: column nowrap;
     text-align: center;
     margin: auto;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 p, a{
@@ -67,7 +67,7 @@ a{
 
 #logo2{
     align-items: center;
-    width: 130px;
+    width: 120px;
 }
 
 #cadas{

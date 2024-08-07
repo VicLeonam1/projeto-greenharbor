@@ -27,7 +27,7 @@ main{
     width: 80vw;
     margin: auto;
     margin-top: 40%;
-    transition: 0.5s;
+    transition: 1.5s;
 }
 
 h1{
@@ -68,11 +68,6 @@ a{
 
 #com{
     padding-top: 10px;
-}
-
-#google{
-    padding-top: 10px;
-    width: 40px;
 }
 
 #logo1{

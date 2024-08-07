@@ -12,17 +12,18 @@
     }
 
     main{
-        width: 500px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        width:700px;
-        transition: 0.5s;
+        margin-top: 5%;
+        width: 65vw;
+        transition: 1s;
     }
 
     #logo1{
         margin: auto;
         display: block;
-        width: 350px;
+        width: 50%;
     }
+
+    
+
     #logo2{display: none;}
 }
