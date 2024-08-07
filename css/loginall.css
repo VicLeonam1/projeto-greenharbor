@@ -18,13 +18,11 @@
         width:700px;
         transition: 0.5s;
     }
-    section{
 
-    }
-
-    #logo{
+    #logo1{
         margin: auto;
         display: block;
         width: 350px;
     }
+    #logo2{display: none;}
 }

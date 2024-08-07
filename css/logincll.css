@@ -10,6 +10,10 @@
     margin: 0px;
 }
 
+p, a {
+    font-size: 13px;
+}
+
 body{
     background: url(../telalogin/bglogin.png) no-repeat fixed center center / cover;
 }
@@ -17,7 +21,7 @@ body{
 main{
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     border-radius: 20px;
     box-shadow: 9px 5px 15px black;
     width: 80vw;
@@ -25,8 +29,14 @@ main{
     margin-top: 40%;
     transition: 0.5s;
 }
+
+h1{
+    margin-bottom: 20px;
+}
+
 section{
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin: auto;
     padding: 20px;
@@ -44,10 +54,13 @@ input{
     padding: 10px;
     margin: 5px;
     border-radius: 20px;
+    border: none;
+    text-align: center;
+    background-color: rgb(201, 201, 201);
+
 }
 
-form a{
-    display: block;
+a{
     padding: 10px;
     text-decoration: none;
     color: green;
@@ -62,8 +75,12 @@ form a{
     width: 40px;
 }
 
-#logo{
+#logo1{
     display: none;
+}
+
+#logo2{
+    width: 130px;
 }
 
 #entrar{
@@ -71,4 +88,8 @@ form a{
     color: white;
     border: none;
     background-color: green;
+}
+.p{
+  padding: 5px;  
+    
 }

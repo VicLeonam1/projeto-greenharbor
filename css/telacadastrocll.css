@@ -3,11 +3,82 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main
+body{
+    background: url(../telaCadastro/background1-cadastro.png) no-repeat fixed center center / cover;
+}
 
-#logo{
+main{
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    width: 70vw;
+    padding: 30px;
+    margin: auto;
+    margin-top: 15%;
+    transition: 0.2s;
+}
+
+section{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin: auto;
+    transition: 0.2s;
+}
+
+p, a{
+    font-size: 13px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    background-color: rgb(201, 201, 201);
+}
+
+h1{
+    text-align: center;
+}
+
+
+p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+#logo1{
     display: none;
+}
+
+#logo2{
+    align-items: center;
+    width: 130px;
+}
+
+#cadas{
+    background-color: green;
+    color: white;
+    width: 189px;
+    display: block;
+    margin: auto;
+}
+
+#fazer-login{
+    padding: 20px;
 }
 
