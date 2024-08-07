@@ -12,7 +12,8 @@
     }
 
     main{
-        margin-top: 5%;
+        margin-top: 10%;
+        padding: 50px;
         width: 65vw;
         transition: 1s;
     }
