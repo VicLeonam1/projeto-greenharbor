@@ -17,8 +17,22 @@
         <div id="Cadas">
           <h1>Cadastrar-se</h1>
           <p>Faça seu cadastro no nosso site!!</p>
-          <form action="cadastro.js" method="post" class="formcadastro">
-            <input type="email" placeholder="insira seu E-mail" required />
+          <form action="#" method="post" class="formcadastro">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Insira seu nome"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Insira seu E-mail"
+            />
             <br />
             <input
               type="tel"
@@ -31,13 +45,6 @@
               placeholder="Crie sua senha"
               id="senha"
               required
-            />
-            <br />
-            <input
-              type="password"
-              required
-              placeholder="Confirme sua senha"
-              id="senha-confirm"
             /><br />
             <input type="submit" value="Cadastrar-se" id="cadas" />
           </form>
