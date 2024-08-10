@@ -8,11 +8,11 @@
     }
 
     body{
-        background: url(../telalogin/bg-telasmaiores.png) no-repeat fixed center center / cover;
+        background: url(../images/bg-telasmaiores.png) no-repeat fixed center center / cover;
     }
 
     main{
-        margin-top: 10%;
+        margin-top: 4%;
         padding: 50px;
         width: 65vw;
         transition: 1s;
