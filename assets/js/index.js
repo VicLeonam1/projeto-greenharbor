@@ -38,16 +38,14 @@ function validateInput() {
 
     // Validação da senha
     if (!passwordInput.value) {
-        passwordInput.parentElement.nextElementSibling.style.display = 'block'; // Senha obrigatória
+        passwordInput.nextElementSibling.style.display = 'block'; // Senha obrigatória
         isValid = false;
     } else {
-        passwordInput.parentElement.nextElementSibling.style.display = 'none';
+        passwordInput.nextElementSibling.style.display = 'none';
     }
 
     return isValid;
 }
-
-
 
 function login(event) {
     event.preventDefault();
@@ -80,4 +78,27 @@ document.getElementById('togglePassword').addEventListener('click', function() {
     const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
     passwordInput.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
+});
+
+document.getElementById('forgotPasswordLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    const email = emailInput.value;
+    if (validarEmail(email)) {
+        firebase.auth().sendPasswordResetEmail(email)
+            .then(() => {
+                alert(`Enviamos um e-mail para ${email}. Verifique seu e-mail.`);
+            })
+            .catch(error => {
+                if (error.code === 'auth/invalid-email') {
+                    alert("O e-mail fornecido é inválido.");
+                } else if (error.code === 'auth/user-not-found') {
+                    alert("Nenhum usuário encontrado com esse e-mail.");
+                } else {
+                    console.log('error', error);
+                    alert("Ocorreu um erro ao enviar o e-mail. Tente novamente mais tarde.");
+                }
+            });
+    } else {
+        alert("Por favor, insira um e-mail válido.");
+    }
 });

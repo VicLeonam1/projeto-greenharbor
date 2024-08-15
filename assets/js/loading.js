@@ -11,7 +11,6 @@ document.querySelector('.p a[href="#"]').addEventListener('click', function(even
     event.preventDefault(); // Impede que o link redirecione imediatamente
     document.getElementById('loading').style.display = 'flex'; // Exibe a animação de loading
     setTimeout(function() {
-        window.location.href = "recuperarsenha.html"
         document.getElementById('loading').style.display = 'none'; // Oculta a animação após a ação
     }, 2000); // Ajuste o tempo de espera conforme necessário
 });

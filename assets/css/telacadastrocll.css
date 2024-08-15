@@ -38,7 +38,7 @@ p, a{
 }
 
 input{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 20px;
     border: none;
@@ -76,9 +76,16 @@ a{
     width: 189px;
     display: block;
     margin: auto;
+    cursor: pointer;
 }
 
 #fazer-login{
     padding: 20px;
 }
 
+.error {
+    margin: 0px;
+    padding: 0px;
+    color: red;
+    display: none;
+}

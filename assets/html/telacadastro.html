@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/telacadastrocll.css" />
     <link rel="stylesheet" href="../css/telacadastroall.css" media="all" />
-    <link rel="shortcut icon" href="icon-gh.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../icon-gh.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMTwbsgQ8o9i1HegSY8/vGhuzG0Zsc5ejjDJQ" crossorigin="anonymous">
     <title>Cadastrar-se</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
         <div id="Cadas">
           <h1>Cadastrar-se</h1>
           <p>Faça seu cadastro no nosso site!!</p>
-          <form action="../config.php" method="post" class="formcadastro">
+          <form id="cadastroForm" class="formcadastro">
             <input
               type="text"
               name="nome"
@@ -41,13 +42,27 @@
               name="senha"
               required
             /><br />
+            <input
+              type="password"
+              placeholder="Confirme sua senha"
+              id="confirmarSenha"
+              name="confirmarSenha"
+              required
+            /><br />
             <input type="submit" value="Cadastrar-se" name="cadastrar" id="cadas" />
           </form>
           <p id="fazer-login">
-            ja possui uma conta? <a href="telalogin.html">Login</a>
+            Já possui uma conta? <a href="telalogin.html">Login</a>
           </p>
+          <p id="nomeError" class="error" style="display: none;">Por favor, insira seu nome.</p>
+          <p id="emailError" class="error" style="display: none;">Por favor, insira um email válido.</p>
+          <p id="senhaError" class="error" style="display: none;">Por favor, insira uma senha.</p>
+          <p id="confirmarSenhaError" class="error" style="display: none;">As senhas não coincidem.</p>
         </div>
       </section>
     </main>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="../js/cadastro.js"></script>
   </body>
 </html>
