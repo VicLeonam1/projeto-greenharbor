@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/logincll.css" media="all" />
-    <link rel="stylesheet" href="../assets/css/loginall.css" />
-    <link rel="shortcut icon" href="icon-gh.ico" type="image/x-icon">
-    <title>Login</title>
-  </head>
-  <body>
-    <main>
-      <img src="../assets/images/logo.png" alt="logo" id="logo1">
-      <section>
-        <!--Tela de login-->
-        <img src="../assets/images/logo.png" alt="logo" id="logo2">
-        <div id="Login">
-          <h1>Login</h1>
-          <p>Faça seu Login</p>
-          <form action="login.js" method="post" class="formlogin">
-            <input type="email" placeholder="insira seu E-mail" /> <br />
-            <input type="password" placeholder="insira sua senha" /> <br />
-            <input type="submit" value="Entrar" id="entrar" /> <br />
-          </form>
-          <p class="p">Não tem conta?<a href="telacadastro.html">Cadastrar-se</a></p>
-          <p class="p"><a href="#">Esqueci minha senha</a></p>
-        </div>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/logincll.css" media="all" />
+  <link rel="stylesheet" href="../assets/css/loginall.css" />
+  <link rel="shortcut icon" href="icon-gh.ico" type="image/x-icon">
+  <title>Login</title>
+  <style>
+    /* CSS Adicionado */
+    .enabled-button:hover {
+        background-color: lightgreen;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="../assets/images/logo.png" alt="logo" id="logo1">
+    <section>
+      <!--Tela de login-->
+      <img src="../assets/images/logo.png" alt="logo" id="logo2">
+      <div id="Login">
+        <h1>Login</h1>
+        <p>Faça seu Login</p>
+        <form action="login.js" method="post" class="formlogin">
+          <input type="email" placeholder="insira seu E-mail" onchange="validateFields()" id="email" required class="cursor-pointer"/>
+
+          <p class="error">Email Obrigatório</p> 
+          <p class="error">Email Inválido</p><br />
+
+          <input type="password" placeholder="insira sua senha" id="password" onchange="validateFields()" />
+          <p class="error" id="emailerror">Senha Obrigatória</p>
+          <p class="error">Senha Inválida
+          </p>
+          
+          <br/>
+          <input type="submit" value="Entrar" id="entrar" disabled="true"/> <br />
+        </form>
+
+        <p class="p">Não tem conta?<a href="telacadastro.html">Cadastrar-se</a></p>
+
+        <p class="p"><a href="#" id="recover-password-button">Esqueci minha senha</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/js/index.js"></script>
+</body>
 </html>

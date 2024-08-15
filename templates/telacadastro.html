@@ -18,7 +18,7 @@
         <div id="Cadas">
           <h1>Cadastrar-se</h1>
           <p>Faça seu cadastro no nosso site!!</p>
-          <form action="#" method="post" class="formcadastro">
+          <form action="../config.php" method="post" class="formcadastro">
             <input
               type="text"
               name="nome"
@@ -45,9 +45,10 @@
               type="password"
               placeholder="Crie sua senha"
               id="senha"
+              name="senha"
               required
             /><br />
-            <input type="submit" value="Cadastrar-se" id="cadas" />
+            <input type="submit" value="Cadastrar-se" name="cadastrar" id="cadas" />
           </form>
           <p id="fazer-login">
             ja possui uma conta? <a href="telalogin.html">Login</a>

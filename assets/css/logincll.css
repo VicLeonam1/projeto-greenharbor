@@ -83,8 +83,26 @@ a{
     color: white;
     border: none;
     background-color: green;
+    cursor: pointer;
 }
-.p{
-  padding: 5px;  
-    
+
+.button{
+    border: none;
+    padding: 10px;
+    width: 210px;
+    margin: 5px;
+    border-radius: 20px;
+    color: green;
+    background-color: white;
+    transition: 0.5s;
+}
+
+#cadas{
+    background-color: green;
+    color: white;
+}
+
+.error{
+    color: red;
+    display: none;
 }
