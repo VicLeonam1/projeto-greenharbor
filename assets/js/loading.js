@@ -1,6 +1,4 @@
-function showLoading() {
-    alert('loading')
-}
+
 
 document.getElementById('signUpLink').addEventListener('click', function(event) {
     event.preventDefault(); // Impede que o link redirecione imediatamente
