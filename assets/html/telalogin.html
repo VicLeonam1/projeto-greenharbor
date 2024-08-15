@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/logincll.css" media="all" />
     <link rel="stylesheet" href="../css/loginall.css" />
     <link rel="shortcut icon" href="icon-gh.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMTwbsgQ8o9i1HegSY8/vGhuzG0Zsc5ejjDJQ" crossorigin="anonymous">
     <title>Login</title>
 </head>
 <body>
@@ -20,30 +21,32 @@
                 <!--Formulário-->
                 <form method="post" class="formlogin" onsubmit="login(event)">
                     <input type="email" placeholder="Insira seu E-mail" name="email" class="" />
-                    <p class="invalid"> Email obrigatório</p>
-                    <input type="password" placeholder="Insira sua senha" name="password" class="" /> 
-                    <p class="invalid">Senha obrigatória
-                    </p>
+                    <p class="invalid">Email obrigatório</p>
+                    <p class="invalid">Email inválido</p> <!-- Adicionado para a validação de email inválido -->
+                    <div class="password-container">
+                        <input type="password" placeholder="Insira sua senha" name="password" class="" id="passwordInput" />
+                        <i class="fas fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                    </div>
+                    <p class="invalid">Senha obrigatória</p>
                     <input type="submit" value="Entrar" id="entrar"/> <br />
                 </form>
+                
                 <!--Esqueci a senha, cadastrar-se -->
-              <hr>
+                <hr>
                 <p class="p" id="p">Não tem conta? <a href="telacadastro.html" id="signUpLink">Cadastrar-se</a></p>
-                <p class="p"><a href="#">Esqueci minha senha</a></p>
+                <p class="p"><a href="#" id="forgotPasswordLink">Esqueci minha senha</a></p>
             </div>
         </section>
     </main>
     
     <!-- Animação de Loading -->
     <div id="loading" style="display: none;">
-      <div class="logo-container">
-          <img src="../../icon-gh.ico" alt="Logo" class="logo" />
-          <div class="spinner"></div>
-      </div>
-  </div>
+        <div class="logo-container">
+            <img src="../../icon-gh.ico" alt="Logo" class="logo" />
+            <div class="spinner"></div>
+        </div>
+    </div>
   
-  
-
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
     <script src="../js/index.js"></script>

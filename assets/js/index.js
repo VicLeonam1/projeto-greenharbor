@@ -10,18 +10,20 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+const form = document.querySelector('form');
+const emailInput = document.querySelector('input[name="email"]');
+const passwordInput = document.querySelector('input[name="password"]');
+const loadingDiv = document.getElementById('loading');
+
 function validarEmail(email) {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regex.test(email);
 }
 
-const form = document.querySelector('form');
-const emailInput = document.querySelector('input[name="email"]');
-const passwordInput = document.querySelector('input[name="password"]');
-
-const validateInput = () => {
+function validateInput() {
     let isValid = true;
 
+    // Validação do email
     if (!emailInput.value) {
         emailInput.nextElementSibling.style.display = 'block'; // Email obrigatório
         isValid = false;
@@ -34,31 +36,48 @@ const validateInput = () => {
         emailInput.nextElementSibling.nextElementSibling.style.display = 'none';
     }
 
+    // Validação da senha
     if (!passwordInput.value) {
-        passwordInput.nextElementSibling.style.display = 'block'; // Senha obrigatória
+        passwordInput.parentElement.nextElementSibling.style.display = 'block'; // Senha obrigatória
         isValid = false;
     } else {
-        passwordInput.nextElementSibling.style.display = 'none';
+        passwordInput.parentElement.nextElementSibling.style.display = 'none';
     }
 
     return isValid;
-};
+}
+
+
 
 function login(event) {
     event.preventDefault();
     if (validateInput()) {
+        loadingDiv.style.display = 'flex'; // Exibe o loading
         firebase.auth().signInWithEmailAndPassword(emailInput.value, passwordInput.value)
             .then(response => {
+                loadingDiv.style.display = 'none'; // Oculta o loading
                 window.location.href = "../../index.html";
             })
             .catch(error => {
-                if (error.code === 'auth/invalid-credential') {
+                loadingDiv.style.display = 'none'; // Oculta o loading em caso de erro
+                if (error.code === 'auth/user-not-found') {
                     alert("Usuário não encontrado. Verifique suas credenciais e tente novamente.");
+                } else if (error.code === 'auth/invalid-credential') {
+                    alert("Credenciais inválidas. Verifique suas informações e tente novamente.");
                 } else {
                     console.log('error', error);
+                    alert("Ocorreu um erro desconhecido. Tente novamente mais tarde.");
                 }
             });
     }
 }
 
 form.addEventListener('submit', login);
+
+// Toggle password visibility
+document.getElementById('togglePassword').addEventListener('click', function() {
+    const passwordInput = document.getElementById('passwordInput');
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
