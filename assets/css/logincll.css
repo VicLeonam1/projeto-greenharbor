@@ -139,8 +139,8 @@ hr {
 
 .spinner {
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 40%;
+    left: 35%;
     width: 15px;
     height: 15px;
     background-color: #32a852; /* Cor da bolinha */
@@ -171,6 +171,6 @@ hr {
 .password-container i {
     margin-left: -2rem; /* Ajusta a posição do ícone ao lado do input */
     cursor: pointer;
-    color: #333; /* Cor do ícone */
+    color: rgb(1, 85, 1); /* Cor do ícone */
     font-size: 1.2rem; /* Ajuste o tamanho do ícone conforme necessário */
 }
