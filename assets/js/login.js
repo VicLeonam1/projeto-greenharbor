@@ -54,13 +54,13 @@ function login(event) {
         firebase.auth().signInWithEmailAndPassword(emailInput.value, passwordInput.value)
             .then(response => {
                 loadingDiv.style.display = 'none'; // Oculta o loading
-                window.location.href = "../../index.html";
+                window.location.href = "home.html";
             })
             .catch(error => {
                 loadingDiv.style.display = 'none'; // Oculta o loading em caso de erro
                 if (error.code === 'auth/user-not-found') {
                     alert("Usuário não encontrado. Verifique suas credenciais e tente novamente.");
-                } else if (error.code === 'auth/invalid-credential') {
+                } else if (error.code === 'auth/invalid-login-credentials') {
                     alert("Credenciais inválidas. Verifique suas informações e tente novamente.");
                 } else {
                     console.log('error', error);
