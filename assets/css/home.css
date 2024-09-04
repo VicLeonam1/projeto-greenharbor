@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: green;
+  height: 20vh; /* Define a altura do header */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-grow: 1; /* Faz o main ocupar o espaço restante */
+  justify-content: space-between;
+}
+
+#um {
+  background-color: red;
+  padding: 50px;
+  width: 21%;
+}
+
+#dois {
+  background-color: blue;
+  padding: 50px;
+  width: 33%;
+}
+
+#tres {
+  background-color: green;
+  box-shadow: 35px 5px 70px black;
+  padding: 50px;
+  
+  width: 22%;
+  flex-grow: 1; /* Faz com que o #tres ocupe todo o espaço vertical disponível */
+  align-self: stretch; /* Garante que o #tres ocupe toda a altura do main */
+}

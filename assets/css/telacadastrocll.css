@@ -76,6 +76,14 @@ a {
   display: block;
   margin: auto;
   cursor: pointer;
+  transition: 0.6s;
+}
+
+#cadas:hover{
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  transform: scale(1.1);
 }
 
 #fazer-login {
