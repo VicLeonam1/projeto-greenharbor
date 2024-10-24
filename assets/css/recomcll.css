@@ -15,6 +15,8 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
     background: url(../images/bg-telarecom.png) no-repeat fixed center center / cover;
 }
 
@@ -26,9 +28,15 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor1);
-    position: fixed;
-    top: 0;
-    width: 100%;
+    padding: 0 20px;
+    
+}
+
+.help{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor5);
 }
 
 header img{

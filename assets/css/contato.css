@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #113D26;
+    --cor2: #148C3E;
+    --cor3: #08400B;
+    --cor4: #83D95B;
+    --cor5: #92D971;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url(../images/bg-telarecom.png) no-repeat fixed center center / cover;
+    background-color: #4CAF50;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--cor1);
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
+.help{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+header p{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--cor2);
+}
+
+header p span{
+    color: var(--cor5);
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+    color: #5ad625;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: left;
+    width: 500px;
+    margin: auto ;
+    padding: 20px;
+    border-radius: 20px;
+    color:black;
+    background-color: #43b114;
+    box-shadow: 2px 2px 3px black;
+
+
+}
+ input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #10430d;
+
+ }
+
+ p{
+    color: #10430d;
+    font-weight: bolder;
+ }
+ button{
+    padding: 10px 30px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.285);
+    box-shadow: 2px 2px 3px black;
+    transition: .2s;
+    cursor: pointer;
+ }
+
+ button:hover{
+    transform: scale(1.2);
+ }
+
