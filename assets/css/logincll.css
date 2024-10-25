@@ -14,18 +14,22 @@ p, a {
 }
 
 body {
-    background: url(../images/background1-cadastro.png) no-repeat fixed center center / cover;
+    background: url(../images/bg-telarecom.png) no-repeat fixed center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
 }
 
 main {
     background-color: white;
     display: flex;
+    justify-content: center;
     flex-flow: row nowrap;
     border-radius: 20px;
     box-shadow: 9px 5px 15px black;
     width: 80vw;
     margin: auto;
-    margin-top: 40%;
     transition: 0.6s;
 }
 
@@ -174,4 +178,22 @@ hr {
     cursor: pointer;
     color: rgb(1, 85, 1); /* Cor do ícone */
     font-size: 1.2rem; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #134026; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor2); 
+    border-radius: 10px;
+    border: 3px solid #134026; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #83D95B; 
 }

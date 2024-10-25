@@ -27,9 +27,12 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cor1);
     padding: 0 20px;
-    
+    background-color: var(--cor1);
+    position: fixed;
+    top: 0;
+    width: 100dvw;
+    box-sizing: border-box;
 }
 
 .help{
@@ -144,4 +147,22 @@ main #recompensas .recompensa .info{
 }
 .folha2{
     display: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #134026; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor2); 
+    border-radius: 10px;
+    border: 3px solid #134026; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #83D95B; 
 }

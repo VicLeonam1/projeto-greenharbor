@@ -7,7 +7,13 @@
 }
 
 body {
-  background: url(../images/background1-cadastro.png) no-repeat fixed center center / cover;
+  background: url(../images/bg-telarecom.png) no-repeat fixed center center / cover;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    box-sizing: border-box;
 }
 
 main {
@@ -19,7 +25,6 @@ main {
   width: 70vw;
   padding: 30px;
   margin: auto;
-  margin-top: 10%;
   transition: 1s;
 }
 
@@ -72,11 +77,11 @@ a {
 #cadas {
   background-color: green;
   color: white;
-  width: 189px;
-  display: block;
+  width: 100%;
   margin: auto;
   cursor: pointer;
   transition: 0.6s;
+  box-sizing: border-box;
 }
 
 #cadas:hover{
