@@ -178,10 +178,10 @@ main{
     margin-top: 50px;
 }
 h1{
-    font-size: 28px;
+    font-size: 20px;
     color: #98ff6c;
     margin-bottom: 20px;
-    text-shadow: 4px 4px 1px black;
+    text-shadow: 4px 5px 1px black;
 }
 
 form{

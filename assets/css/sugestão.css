@@ -171,7 +171,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4.5%;
+    margin-top: 15%;
 }
 
 form {
@@ -180,7 +180,7 @@ form {
     margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 4px 4px 44px rgba(0, 0, 0, 0.692);
-    width: 80dvw;
+    width: 90dvw;
     padding: 40px;
     text-align: center;
     box-sizing: border-box;
@@ -195,15 +195,17 @@ h1 {
 
 p {
     margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
     text-align: left;
     color:#1b2b24;
 }
 
 h2{
     color: #1b2b24;
-    text-align: left
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 input, textarea {
