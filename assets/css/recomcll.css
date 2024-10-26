@@ -44,7 +44,7 @@ body{
     background-color: var(--cor2);
     height: 100dvh;
     position: fixed;
-    width: 50dvw;
+    width: 70dvw;
     top: 0;
     box-sizing: border-box;
     transition: .5s;
