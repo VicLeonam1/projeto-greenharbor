@@ -176,13 +176,14 @@ main {
 
 form {
     background-color:var(--cor5);
-    padding: 40px;
+    
     margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 4px 4px 44px rgba(0, 0, 0, 0.692);
-    width: 80%;
-    max-width: 500px;
+    width: 80dvw;
+    padding: 40px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -215,6 +216,7 @@ input, textarea {
     font-size: 14px;
     color: white;
     background-color: var(--cor2);
+    box-sizing: border-box;
 }
 
 input::placeholder, textarea::placeholder {
