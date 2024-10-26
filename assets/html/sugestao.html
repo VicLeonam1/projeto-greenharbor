@@ -6,10 +6,35 @@
     <link rel="shortcut icon" href="/icon-gh.ico" type="image/x-icon">
     <title>Suporte</title>
     <link rel="stylesheet" href="../css/sugestão.css">
+    <link rel="stylesheet" href="../css/sugestão-mobile.css">
 </head>
 <body>
+
+    <div class="overlay-menu"></div>
+    <div class="navegacao">
+      <div class="x">
+        <div class="exit" onclick="exit()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="#">Usuário</a></li>
+          <li><a href="#">início</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="../html/recompensas.html">Recompensas</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="../html/sugestao.html">Suporte/FAQ</a></li>
+          <li><a href="../html/contato.html">Entre em contato</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <header>
-        <img src="../images/menu.png" alt="icone de menu" class="icone" />
+        <img src="../images/menu.png" alt="icone de menu" class="icone" onclick="menu()"/>
         <p>GREEN <span>HARBOR</span></p>
         <img src="../images/duvida.png" alt="?" class="icone">
       </header>
@@ -25,6 +50,7 @@
             <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Adicione a sua primeira pergunta ou sugestão"></textarea>
             <button type="submit">Enviar</button>
         </form>
-    </main>    
+    </main>
+    <script src="../js/navegacao.js"></script>    
     </body>
     </html>

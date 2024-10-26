@@ -19,23 +19,29 @@
   <body>
     <div class="overlay-menu"></div>
     <div class="navegacao">
-      <div class="exit" onclick="exit()"><img src="../images/exit.png" alt="exit" ></div>
+      <div class="x">
+        <div class="exit" onclick="exit()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <nav>
         <ul>
-          <li><a href="#">início</a></li>
           <li><a href="#">Usuário</a></li>
+          <li><a href="#">início</a></li>
           <li><a href="#">Projetos</a></li>
-          <li><a href="#">Recompensas</a></li>
+          <li><a href="../html/recompensas.html">Recompensas</a></li>
           <li><a href="#">Planos</a></li>
           <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">Suporte/FAQ</a></li>
-          <li><a href="#">Entre em contato</a></li>
+          <li><a href="../html/sugestao.html">Suporte/FAQ</a></li>
+          <li><a href="../html/contato.html">Entre em contato</a></li>
         </ul>
       </nav>
     </div>
 
     <header>
-      <img src="../images/menu.png" alt="icone de menu" id="menu" onclick="menu()" />
+      <img src="../images/menu.png" alt="icone de menu" id="menu" onclick="menu()"/>
       <p>GREEN <span>HARBOR</span></p>
       <img src="../images/duvida.png" alt="?">
 
@@ -92,6 +98,6 @@
     </main>
         <img src="../images/folhas.png" alt="folhas1" class="folha1">
         <img src="../images/folhas2.png" alt="folhas2" class="folha2">
-        <script src="../js/recom.js"></script>
+        <script src="../js/navegacao.js"></script>
   </body>
 </html>
