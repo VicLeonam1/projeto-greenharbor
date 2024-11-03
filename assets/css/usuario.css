@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -191,4 +192,80 @@ header p span{
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #83D95B; 
+}
+
+
+/*Main*/
+
+main{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.infousuario{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 4px 10px #0c2c1c;
+}
+
+#foto-de-perfil{
+    width: 300px;
+    filter: drop-shadow(10px 5px 20px rgb(7, 37, 16));
+}
+
+.perfil{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    text-align: center;
+    color: #92eb69;
+    text-shadow: 3px 3px 2px rgb(7, 37, 16);
+}
+
+#senha{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    gap: 3px;
+}
+
+#senha a{
+    color: var(--cor5)
+}
+
+.icone{
+    width: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.infos{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.info{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.info p {
+    width: 500px;
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 14px;
+    border-radius: 20px;
+    color: var(--cor5);
 }

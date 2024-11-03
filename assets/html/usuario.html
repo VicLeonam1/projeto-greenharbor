@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/usuario.css">
-    <link rel="stylesheet" href="../css/usuarioall.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/usuario.css" />
+    <link rel="stylesheet" href="../css/usuarioall.css" />
     <title>Perfil do Usuário</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="overlay-menu"></div>
     <div class="navegacao">
-        
-        <div class="x">
-            <a href="../html/usuario.html" class="usuario"><img src="../images/perfil.png" alt="foto-de-perfil" id="foto-perfil"></a>
-            <div class="exit" onclick="exit()">
-              <div></div>
-              <div></div>
-              <div></div>
+      <div class="x">
+        <a href="../html/usuario.html" class="usuario"
+          ><img
+            src="../images/perfil.png"
+            alt="foto-de-perfil"
+            id="foto-perfil"
+        /></a>
+        <div class="exit" onclick="exit()">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
       <nav>
@@ -33,17 +37,49 @@
     </div>
 
     <header>
-      <img src="../images/menu.png" alt="icone de menu" id="menu" onclick="menu()"/>
+      <img
+        src="../images/menu.png"
+        alt="icone de menu"
+        id="menu"
+        onclick="menu()"
+      />
       <p>GREEN <span>HARBOR</span></p>
-      <img src="../images/duvida.png" alt="?">
-
+      <img src="../images/duvida.png" alt="?" />
     </header>
     <main>
+      <section class="infousuario">
         <div class="perfil">
-            <img src="../images/perfil.png" alt="">
-            
+          <img src="../images/perfil.png" alt="foto de perfil"
+          id="foto-de-perfil" />
+          <h1>Nome do usuario</h1>
         </div>
+        <div class="infos">
+          <div class="info">
+            <img src="../images/e-mail.png" alt="email" class="icone"/>
+            <p>Email</p>
+          </div>
+          <div class="info">
+            <img src="../images/telefone.png" alt="telefone" class="icone"/>
+            <p>Número</p>
+          </div>
+          <div class="info">
+            <img src="../images/cadeado.png" alt="cadeado" class="icone"/>
+            <div id="senha">
+              <p>Senha</p>
+              <a href="mudar senha">Mudar senha</a>
+            </div>
+          </div>
+          <div class="info">
+            <img src="../images/calendario.png" alt="calendario" class="icone"/>
+            <p>Data de Nascimento</p>
+          </div>
+          <div class="info">
+            <img src="../images/genero.png" alt="genero" class="icone"/>
+            <p>Gênero</p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../js/navegacao.js"></script>
-</body>
+  </body>
 </html>
