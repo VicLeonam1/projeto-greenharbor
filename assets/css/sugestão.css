@@ -179,7 +179,6 @@ header p span{
 
 main {
     display: flex;
-    width: ;
     flex-direction: column;
     align-items: center;
     justify-content: center;
