@@ -14,3 +14,15 @@ document.querySelector('.p a[href="#"]').addEventListener('click', function(even
         document.getElementById('loading').style.display = 'none'; // Oculta a animação após a ação
     }, 2000); // Ajuste o tempo de espera conforme necessário
 });
+document.querySelectorAll('.navegacao nav ul li a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o redirecionamento imediato
+        document.getElementById('loading').style.display = 'flex'; // Exibe a animação de loading
+        const targetHref = event.target.href; // Armazena o destino do link
+
+        setTimeout(function() {
+            window.location.href = targetHref; // Redireciona após o tempo especificado
+        }, 2000); // Ajuste o tempo conforme necessário
+    });
+
+})

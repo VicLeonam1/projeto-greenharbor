@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 888px){
+    .navegacao{
+        width: 30dvw;
+     }
+     .sections{
+        flex-flow: row;
+     }
+}
