@@ -5,4 +5,13 @@
     .navegacao{
             width: 30dvw;
         }
+    form{
+        width: 60dvw;
     }
+    }
+
+    @media screen and (max-width: 900px) {
+        form{
+            width: 90dvw;
+        }
+        }
