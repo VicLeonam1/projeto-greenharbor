@@ -14,4 +14,10 @@
         form{
             width: 90dvw;
         }
+        .perguntas{
+            width: 90dvw;
+        }
+        h1{
+            font-size: 30px;
+        }
         }

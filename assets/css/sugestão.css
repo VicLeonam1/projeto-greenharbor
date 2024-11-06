@@ -199,10 +199,11 @@ form {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 50px;
     color: #98ff6c;
     margin-bottom: 20px;
     text-shadow: 4px 4px 1px black;
+    text-align: center;
 }
 
 p {
@@ -251,6 +252,67 @@ button {
 button:hover {
     transform: scale(1.2);
 }
+
+/*FAQ - PERGUNTAS FREQUENTES*/
+
+.perguntas {
+    margin: auto;
+}
+
+.pergunta {
+    align-self: center;
+    justify-self: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--cor4);
+    color: var(--cor3);
+    cursor: pointer;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 4px 3px 5px green;
+    transition: background-color .9s ease;
+}
+
+.pergunta a {
+    color: #148C3E;
+}
+
+.pergunta-titulo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.resposta {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .5s ease, opacity .2s ease;
+}
+
+
+.pergunta.ativa .resposta {
+    max-height: 500px; 
+    opacity: 1;
+}
+
+.triangulo-invertido{
+    width: 20px;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+.pergunta.ativa .triangulo-invertido {
+    transform: rotate(-0deg);
+}
+
+
+
+
+
+
 ::-webkit-scrollbar {
     width: 12px;
 }
