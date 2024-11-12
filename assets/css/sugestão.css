@@ -280,7 +280,7 @@ button:hover {
     flex-flow: row nowrap;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .resposta {
@@ -297,7 +297,7 @@ button:hover {
 }
 
 .triangulo-invertido{
-    width: 20px;
+    width: 10px;
     transform: rotate(90deg);
     transition: .5s;
 }
