@@ -1,26 +1,25 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
 
-    main{
-        margin-top: 4%;
-        padding: 50px;
-        width: 75vw;
-        transition: 1s;
-    }
+  main {
+    margin-top: 4%;
+    padding: 50px;
+    width: 75vw;
+    transition: 1s;
+  }
 
-    #logo1{
-        margin: auto;
-        display: block;
-        width: 50%;
-    }
+  #logo1 {
+    margin: auto;
+    display: block;
+    width: 50%;
+  }
 
-    
-
-    #logo2{display: none;}
+  #logo2 {
+    display: none;
+  }
 }

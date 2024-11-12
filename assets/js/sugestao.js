@@ -1,3 +1,3 @@
 function toggleResposta(element) {
-    element.classList.toggle("ativa");
+  element.classList.toggle("ativa");
 }

@@ -7,13 +7,14 @@
 }
 
 body {
-  background: url(../images/bg-telarecom.png) no-repeat fixed center center / cover;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    box-sizing: border-box;
+  background: url(../images/bg-telarecom.png) no-repeat fixed center center /
+    cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  box-sizing: border-box;
 }
 
 main {
@@ -38,7 +39,8 @@ section {
   transition: 1s;
 }
 
-p, a {
+p,
+a {
   font-size: 13px;
 }
 
@@ -84,7 +86,7 @@ a {
   box-sizing: border-box;
 }
 
-#cadas:hover{
+#cadas:hover {
   background-color: white;
   color: green;
   border: 1px solid green;
@@ -121,49 +123,53 @@ a {
 }
 
 #loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    flex-direction: column;
-    color: white;
-    font-size: 18px;
-    display: none; /* Inicialmente escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  color: white;
+  font-size: 18px;
+  display: none; /* Inicialmente escondido */
 }
 
 .logo-container {
-    position: relative;
-    width: 50px; /* Ajuste conforme o tamanho da sua logo */
-    height: 50px; /* Ajuste conforme o tamanho da sua logo */
+  position: relative;
+  width: 50px; /* Ajuste conforme o tamanho da sua logo */
+  height: 50px; /* Ajuste conforme o tamanho da sua logo */
 }
 
 .logo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .spinner {
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    width: 15px;
-    height: 15px;
-    background-color: #32a852; /* Cor da bolinha */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: spin 2s linear infinite; /* Tempo reduzido para uma rotação mais rápida */
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 15px;
+  height: 15px;
+  background-color: #32a852; /* Cor da bolinha */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 2s linear infinite; /* Tempo reduzido para uma rotação mais rápida */
 }
 
-
 @keyframes spin {
-    0% { transform: rotate(0deg) translateX(50px) translateY(0) translate(-50%, -50%); }
-    100% { transform: rotate(360deg) translateX(50px) translateY(0) translate(-50%, -50%); }
+  0% {
+    transform: rotate(0deg) translateX(50px) translateY(0) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px) translateY(0)
+      translate(-50%, -50%);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -171,15 +177,15 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #134026; 
+  background-color: #134026;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--cor2); 
+  background-color: var(--cor2);
   border-radius: 10px;
-  border: 3px solid #134026; 
+  border: 3px solid #134026;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #83D95B; 
+  background-color: #83d95b;
 }

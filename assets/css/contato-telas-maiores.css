@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 900px) {
-    form{
-        width: 50dvw;
-    }
+  form {
+    width: 50dvw;
+  }
 
-    .navegacao{
-        width: 30dvw;
-    }
+  .navegacao {
+    width: 30dvw;
+  }
 }

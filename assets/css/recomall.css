@@ -1,38 +1,38 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 888px){
-   main{
+@media screen and (min-width: 888px) {
+  main {
     margin-top: 7%;
-   }
+  }
 
-   main #recompensas{
+  main #recompensas {
     flex-flow: row nowrap;
     width: 90vw;
     margin: auto;
     margin-top: 3%;
     gap: 10px;
-   }
+  }
 
-   main #recompensas .recompensa{
+  main #recompensas .recompensa {
     padding: 10px 40px;
-   }
+  }
 
-   .folha2{
+  .folha2 {
     display: block;
     width: 200px;
     position: fixed;
     bottom: 0;
     left: 0;
-   }
-   .folha1{
+  }
+  .folha1 {
     display: block;
     width: 200px;
     position: fixed;
     bottom: 0;
     right: 0;
-   }
+  }
 
-   .navegacao{
-      width: 30dvw;
-   }
+  .navegacao {
+    width: 30dvw;
+  }
 }

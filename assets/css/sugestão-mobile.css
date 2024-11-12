@@ -1,23 +1,22 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 900px) {
+  .navegacao {
+    width: 30dvw;
+  }
+  form {
+    width: 60dvw;
+  }
+}
 
-    .navegacao{
-            width: 30dvw;
-        }
-    form{
-        width: 60dvw;
-    }
-    }
-
-    @media screen and (max-width: 900px) {
-        form{
-            width: 90dvw;
-        }
-        .pergunta{
-            width: 90dvw;
-        }
-        h1{
-            font-size: 30px;
-        }
-        }
+@media screen and (max-width: 900px) {
+  form {
+    width: 90dvw;
+  }
+  .pergunta {
+    width: 90dvw;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}

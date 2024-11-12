@@ -1,158 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--FONTS DO GOOLE-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet"
-  />
-  <!--FIM FONTS DO GOOGLE-->
-  <link rel="stylesheet" href="../css/sugestão.css">
-  <link rel="stylesheet" href="../css/sugestão-mobile.css">
-  <title>Suporte</title>
-  <link rel="shortcut icon" href="/icon-gh.ico" type="image/x-icon">
-</head>
-<body>
-
-  <div class="overlay-menu"></div>
-  <div class="navegacao">
-      
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONTS DO GOOLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--FIM FONTS DO GOOGLE-->
+    <link rel="stylesheet" href="../css/sugestão.css" />
+    <link rel="stylesheet" href="../css/sugestão-mobile.css" />
+    <title>Suporte</title>
+    <link rel="shortcut icon" href="/icon-gh.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="overlay-menu"></div>
+    <div class="navegacao">
       <div class="x">
-        <a href="../html/usuario.html" class="usuario"><img src="../images/perfil.png" alt="foto-de-perfil" id="foto-perfil"></a>
-          <div class="exit" onclick="exit()">
-            <div></div>
-            <div></div>
-            <div></div>
+        <a href="../html/usuario.html" class="usuario"
+          ><img
+            src="../images/perfil.png"
+            alt="foto-de-perfil"
+            id="foto-perfil"
+        /></a>
+        <div class="exit" onclick="exit()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#">Navegar</a></li>
+          <li><a href="../html/projetos.html">Projetos</a></li>
+          <li><a href="../html/recompensas.html">Recompensas</a></li>
+          <li><a href="../html/planos.html">Planos</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="../html/sugestao.html">Suporte/FAQ</a></li>
+          <li><a href="../html/contato.html">Entre em contato</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Navegar</a></li>
-        <li><a href="../html/projetos.html">Projetos</a></li>
-        <li><a href="../html/recompensas.html">Recompensas</a></li>
-        <li><a href="../html/planos.html">Planos</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="../html/sugestao.html">Suporte/FAQ</a></li>
-        <li><a href="../html/contato.html">Entre em contato</a></li>
-      </ul>
-    </nav>
-  </div>
 
-  <header>
-    <img src="../images/menu.png" alt="icone de menu" id="menu" onclick="menu()"/>
-    <p>GREEN <span>HARBOR</span></p>
-    <img src="../images/duvida.png" alt="?">
+    <header>
+      <img
+        src="../images/menu.png"
+        alt="icone de menu"
+        id="menu"
+        onclick="menu()"
+      />
+      <p>GREEN <span>HARBOR</span></p>
+      <img src="../images/duvida.png" alt="?" />
+    </header>
 
-  </header>
-    
     <main>
       <section class="perguntas">
         <h1>Perguntas Frequentes</h1>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Como posso me cadastrar e começar a usar o Green Harbor?
+          <div class="pergunta-titulo">
+            Como posso me cadastrar e começar a usar o Green Harbor?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>Para se cadastrar no Green Harbor, acesse o site oficial e clique em <a href="./telacadastro.html">Cadastrar</a>. Preencha as informações solicitadas e crie uma conta. Após o cadastro, você poderá explorar projetos ambientais, apoiar os que mais interessarem, e também iniciar suas próprias iniciativas sustentáveis.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              Para se cadastrar no Green Harbor, acesse o site oficial e clique
+              em <a href="./telacadastro.html">Cadastrar</a>. Preencha as
+              informações solicitadas e crie uma conta. Após o cadastro, você
+              poderá explorar projetos ambientais, apoiar os que mais
+              interessarem, e também iniciar suas próprias iniciativas
+              sustentáveis.
+            </p>
+          </div>
         </div>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Como posso garantir que meu projeto será aprovado pela plataforma?
+          <div class="pergunta-titulo">
+            Como posso garantir que meu projeto será aprovado pela plataforma?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>Para garantir a aprovação do seu projeto no Green Harbor, certifique-se de que ele atende aos critérios estabelecidos pela plataforma, como o impacto ambiental positivo e a viabilidade do projeto. É importante descrever os objetivos, o plano de ação e como o projeto contribuirá para a preservação ambiental.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              Para garantir a aprovação do seu projeto no Green Harbor,
+              certifique-se de que ele atende aos critérios estabelecidos pela
+              plataforma, como o impacto ambiental positivo e a viabilidade do
+              projeto. É importante descrever os objetivos, o plano de ação e
+              como o projeto contribuirá para a preservação ambiental.
+            </p>
+          </div>
         </div>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Como o Green Harbor contribui diretamente para a preservação ambiental?
+          <div class="pergunta-titulo">
+            Como o Green Harbor contribui diretamente para a preservação
+            ambiental?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>O Green Harbor incentiva a criação e o apoio a projetos com impacto positivo no meio ambiente. A plataforma conecta pessoas e empresas que querem fazer a diferença, permitindo que esses projetos ganhem visibilidade, financiamento e engajamento necessário para serem implementados e gerarem mudanças reais.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              O Green Harbor incentiva a criação e o apoio a projetos com
+              impacto positivo no meio ambiente. A plataforma conecta pessoas e
+              empresas que querem fazer a diferença, permitindo que esses
+              projetos ganhem visibilidade, financiamento e engajamento
+              necessário para serem implementados e gerarem mudanças reais.
+            </p>
+          </div>
         </div>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Qual o impacto real dos projetos apoiados pela comunidade?
+          <div class="pergunta-titulo">
+            Qual o impacto real dos projetos apoiados pela comunidade?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>O impacto dos projetos depende do apoio e do engajamento da comunidade. Cada iniciativa visa contribuir para a sustentabilidade, seja pela recuperação de áreas degradadas, plantio de árvores, combate ao desperdício, ou outras ações que contribuem para um meio ambiente mais saudável.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              O impacto dos projetos depende do apoio e do engajamento da
+              comunidade. Cada iniciativa visa contribuir para a
+              sustentabilidade, seja pela recuperação de áreas degradadas,
+              plantio de árvores, combate ao desperdício, ou outras ações que
+              contribuem para um meio ambiente mais saudável.
+            </p>
+          </div>
         </div>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Como funciona o sistema de criação e apoio a projetos ambientais?
+          <div class="pergunta-titulo">
+            Como funciona o sistema de criação e apoio a projetos ambientais?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>No Green Harbor, qualquer usuário pode criar um projeto ambiental, descrevendo a proposta, os objetivos e os benefícios esperados. Outros usuários podem visualizar os projetos e escolher apoiá-los, seja com participação ativa, divulgação, ou outros tipos de suporte, para ajudar no progresso e sucesso da iniciativa.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              No Green Harbor, qualquer usuário pode criar um projeto ambiental,
+              descrevendo a proposta, os objetivos e os benefícios esperados.
+              Outros usuários podem visualizar os projetos e escolher apoiá-los,
+              seja com participação ativa, divulgação, ou outros tipos de
+              suporte, para ajudar no progresso e sucesso da iniciativa.
+            </p>
+          </div>
         </div>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Posso cancelar meu apoio a um projeto após iniciar?
+          <div class="pergunta-titulo">
+            Posso cancelar meu apoio a um projeto após iniciar?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>Sim, você pode cancelar seu apoio a um projeto. É importante comunicar essa decisão para que o criador do projeto saiba que você não estará mais envolvido. O cancelamento de apoio pode afetar o progresso do projeto, por isso recomenda-se que, se possível, haja uma comunicação clara sobre os motivos.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              Sim, você pode cancelar seu apoio a um projeto. É importante
+              comunicar essa decisão para que o criador do projeto saiba que
+              você não estará mais envolvido. O cancelamento de apoio pode
+              afetar o progresso do projeto, por isso recomenda-se que, se
+              possível, haja uma comunicação clara sobre os motivos.
+            </p>
+          </div>
         </div>
-    
+
         <div class="pergunta" onclick="toggleResposta(this)">
-            <div class="pergunta-titulo">Posso fazer doações financeiras para apoiar projetos diretamente?
+          <div class="pergunta-titulo">
+            Posso fazer doações financeiras para apoiar projetos diretamente?
 
-              <img src="../images/triangulo-invertido.png" alt="Triangulo triangulo-invertido" class="triangulo-invertido">
-            </div>
-            
-            <div class="resposta">
-                <p>Sim, o Green Harbor permite que você faça doações financeiras para apoiar diretamente os projetos que desejar. Dessa forma, você pode contribuir de maneira prática para a realização de projetos que beneficiam o meio ambiente.</p>
-                
-            </div>
+            <img
+              src="../images/triangulo-invertido.png"
+              alt="Triangulo triangulo-invertido"
+              class="triangulo-invertido"
+            />
+          </div>
+
+          <div class="resposta">
+            <p>
+              Sim, o Green Harbor permite que você faça doações financeiras para
+              apoiar diretamente os projetos que desejar. Dessa forma, você pode
+              contribuir de maneira prática para a realização de projetos que
+              beneficiam o meio ambiente.
+            </p>
+          </div>
         </div>
-    </section>
-    
+      </section>
 
-        <section class="formulario">
-          <h1>Formulário</h1>
-          <form>
-              <p>Seu nome:</p>
-              <input type="text" name="nome" id="nome" placeholder="Nome">
-              <p>Seu E-mail:</p>
-              <input type="email" name="email" id="email" placeholder="Email">
-              <h2>Digite a sua pergunta ou sugestão:</h2>
-              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Adicione a sua pergunta"></textarea>
-              <button type="submit">Enviar</button>
-          </form>
-        </section>
+      <section class="formulario">
+        <h1>Formulário</h1>
+        <form>
+          <p>Seu nome:</p>
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
+          <p>Seu E-mail:</p>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <h2>Digite a sua pergunta ou sugestão:</h2>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+            placeholder="Adicione a sua pergunta"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
     <script src="../js/navegacao.js"></script>
     <script src="../js/sugestao.js"></script>
-    </body>
-    </html>
+  </body>
+</html>
