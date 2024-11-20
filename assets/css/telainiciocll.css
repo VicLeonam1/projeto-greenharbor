@@ -16,6 +16,11 @@
 body{
   background-color: #134026;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 /*HEADER*/
 
 header {
@@ -32,19 +37,6 @@ header {
   box-sizing: border-box;
 }
 
-.help {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--cor5);
-}
-
-header img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
 header p {
   font-size: 30px;
   font-weight: 600;
@@ -55,7 +47,27 @@ header p span {
   color: var(--cor5);
 }
 
+header nav ul{
+  list-style-type: none;
+}
 
+header nav ul li{
+  display: inline-block;
+  padding: 0 30px; 
+  transition: .2s;
+}
+
+header nav ul li:hover{
+  transform: scale(1.1);
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: var(--cor5 );
+  font-size: 20px;
+}
+
+/* HOME */
 
 main #home{
   padding: 80px 41px;
@@ -77,7 +89,10 @@ main #home #textos{
 
 main #home #textos .letras{
   font-weight: 400;
-  color: #148c3e;
+}
+
+.letras{
+  color: #83d95b;
 }
 
 .letras a{
@@ -91,8 +106,9 @@ main #home #textos h1 #nome{
 }
 
 main #home #textos button{
-  padding: 10px;
+  padding: 10px 50px;
   margin-top: 30px;
+  margin-left: 10px;
   box-shadow: 5px 5px 10px var(--cor1);
   border-radius: 30px;
   border: none;
@@ -116,4 +132,75 @@ main #home #textos button:hover{
 
 .material-symbols-outlined{
   transform: translateY(5px);
+}
+
+/* SOBRE */
+
+#sobre .infos .insta img{
+  width: 80px;
+  transition: .2s;
+}
+
+#sobre .infos .insta img:hover{
+  transform: scale(1.1);
+}
+
+#sobre .infos .insta{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 30px;
+}
+
+#sobre .infos p{
+  font-size: 30px;
+}
+
+#sobre .infos h1{
+  color: #92d971;
+  font-size: 30px;
+  border-bottom: #92d971
+}
+
+#sobre .logopaint{
+ padding-right: 40px;
+ filter: drop-shadow(1px 1px 10px black);
+}
+
+#sobre .infos{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 70%;
+  padding: 30px;
+}
+
+#sobre{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 30px #00331291;
+  height: 767.1px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #134026;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor2);
+  border-radius: 10px;
+  border: 3px solid #134026;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #83d95b;
 }
